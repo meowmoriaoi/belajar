@@ -27,12 +27,15 @@ class Layout extends BaseController
 <?= $this->extend('Layouts/main') ?>
 
 <?= $this->section('content') ?>
+
 <ul>
     <li>Farras</li>
     <li>Agda</li>
     <li>Munggaran</li>
 </ul>
+
 <?= $this->include('Layouts/tambahan') ?>
+
 <?= $this->endSection() ?>
 
 ```
@@ -52,7 +55,9 @@ class Layout extends BaseController
 
 <body>
     <h1>Identitas</h1>
+
     <?= $this->renderSection('content') ?>
+
     <h2>Big Match!!</h2>
 </body>
 
